@@ -24,6 +24,7 @@
       position: relative;
     }
 
+    /* Ambient cloud spheres */
     .blob {
       position: absolute;
       border-radius: 50%;
@@ -46,6 +47,7 @@
       right: -10%;
     }
 
+    /* AeroGlass card */
     .glass-panel {
       position: relative;
       z-index: 1;
@@ -80,6 +82,7 @@
       margin-bottom: 28px;
     }
 
+    /* Views */
     .view {
       width: 100%;
       display: flex;
@@ -92,6 +95,7 @@
       display: none;
     }
 
+    /* Buttons */
     .btn {
       width: 100%;
       padding: 14px 20px;
@@ -161,15 +165,17 @@
     <img src="ProWhiteboard.ico" alt="ProWhiteboard Logo" class="app-icon">
     <h1 class="app-title">ProWhiteboard</h1>
 
+    <!-- First Screen: Single Download Button -->
     <div id="initial-view" class="view">
       <button class="btn btn-primary" onclick="showOptions()">Download</button>
     </div>
 
+    <!-- Second Screen: OS Choice -->
     <div id="options-view" class="view hidden">
-      <a href="https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest/download/ProWhiteboard.exe" class="btn btn-primary">
+      <a href="https://github.com/ArthWarrior3201/ProWhiteboard/releases/latest/download/ProWhiteboard.exe" class="btn btn-primary">
         Download for Windows
       </a>
-      <a href="https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest/download/ProWhiteboard-macOS.zip" class="btn">
+      <a href="https://github.com/ArthWarrior3201/ProWhiteboard/releases/latest/download/ProWhiteboard-macOS.zip" class="btn">
         Download for macOS
       </a>
       <button class="btn btn-back" onclick="showInitial()">← Back</button>
