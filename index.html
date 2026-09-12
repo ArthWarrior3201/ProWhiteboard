@@ -50,7 +50,7 @@
       position: relative;
       z-index: 1;
       width: min(90vw, 420px);
-      padding: 42px 32px;
+      padding: 42px 32px 30px;
       border-radius: 28px;
       background: rgba(255, 255, 255, 0.45);
       backdrop-filter: blur(24px) saturate(180%);
@@ -77,7 +77,7 @@
       font-weight: 700;
       color: #0f172a;
       letter-spacing: -0.5px;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     .view {
@@ -137,7 +137,7 @@
     }
 
     .btn-back {
-      margin-top: 6px;
+      margin-top: 4px;
       font-size: 13px;
       padding: 8px 14px;
       background: transparent;
@@ -151,6 +151,24 @@
       background: rgba(255, 255, 255, 0.4);
       color: #0f172a;
     }
+
+    .license-notice {
+      margin-top: 22px;
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.4;
+    }
+
+    .license-link {
+      color: #0284c7;
+      text-decoration: underline;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .license-link:hover {
+      color: #0369a1;
+    }
   </style>
 </head>
 <body>
@@ -161,10 +179,12 @@
     <img src="https://raw.githubusercontent.com/ArthWarrior3201/ProWhiteboard/main/ProWhiteboard.png" alt="ProWhiteboard Logo" class="app-icon">
     <h1 class="app-title">ProWhiteboard</h1>
 
+    <!-- Initial Single Download View -->
     <div id="initial-view" class="view">
       <button class="btn btn-primary" onclick="showOptions()">Download</button>
     </div>
 
+    <!-- Platform Selection View -->
     <div id="options-view" class="view hidden">
       <a href="https://github.com/ArthWarrior3201/ProWhiteboard/releases/latest/download/ProWhiteboard.exe" class="btn btn-primary">
         Download for Windows
@@ -174,6 +194,11 @@
       </a>
       <button class="btn btn-back" onclick="showInitial()">← Back</button>
     </div>
+
+    <!-- License Note -->
+    <p class="license-notice">
+      This app requires a license. To get one, visit the <a href="https://arthwarrior3201.github.io/prowhiteboard-portal/" target="_blank" rel="noopener noreferrer" class="license-link">License Portal</a>.
+    </p>
   </div>
 
   <script>
